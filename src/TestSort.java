@@ -35,9 +35,11 @@ public class TestSort {
     }
 
     public static void main(String[] args) {
-        IntSorter sorter = new Mergesort();
-        
-        int firstN = 10000;
+        //OptimizedMergesort sorter = new OptimizedMergesort();
+        //Mergesort sorter = new Mergesort();
+        SorteringStandardbiblotek sorter = new SorteringStandardbiblotek();
+
+        int firstN = 100000;
 
         System.out.println("Unordered:");
         testSort(sorter, firstN, false);

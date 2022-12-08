@@ -4,10 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="dcf2c754-a94c-45c9-b561-d3bb7d8e6b64" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/runConfigurations.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Mergesort.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+    <list default="true" id="dcf2c754-a94c-45c9-b561-d3bb7d8e6b64" name="Changes" comment="mergesort">
+      <change afterPath="$PROJECT_DIR$/src/SorteringStandardbiblotek.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Tester.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/TestSort.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/TestSort.java" afterDir="false" />
     </list>
@@ -39,10 +38,18 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Algoritmanalys/Java" />
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Application.TestSort">
     <configuration name="TestSort" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="TestSort" />
+      <module name="Sortering" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Tester" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Tester" />
       <module name="Sortering" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -51,6 +58,7 @@
     <recent_temporary>
       <list>
         <item itemvalue="Application.TestSort" />
+        <item itemvalue="Application.Tester" />
       </list>
     </recent_temporary>
   </component>
@@ -63,6 +71,13 @@
       <option name="presentableId" value="Default" />
       <updated>1669724268794</updated>
     </task>
+    <task id="LOCAL−00001" summary="mergesort">
+      <created>1670240434938</created>
+      <option name="number" value="LOCAL−00001" />
+      <option name="presentableId" value="LOCAL−00001" />
+      <updated>1670240434938</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -76,5 +91,9 @@
       </map>
     </option>
     <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="mergesort" />
+    <option name="LAST_COMMIT_MESSAGE" value="mergesort" />
   </component>
 </project>
