@@ -9,10 +9,8 @@ public class Tester {
 
         SorteringStandardbiblotek sorter = new SorteringStandardbiblotek();
         //Mergesort sorter = new Mergesort();
-        int firstN = 100;
-
-        int array[] = new int[]{1, 3, 5, 8, 2, 4, 6, 10, 12, 11, 11, 11, 17, 22, 22, 21, 9, 13, 14, 14 };
-        sorter.sort(array);
+        int firstN = 20;
+        test(sorter, firstN);
 
     }
 
@@ -21,16 +19,21 @@ public class Tester {
         int multiplier = 1;
         int n = firstN;
 
-        while(firstN < (firstN*15 +1)){
+        while(n < (firstN*4)){
             n = firstN * multiplier;
-            int[] randomIntsArray = IntStream.generate(() -> new Random().nextInt(100000)).limit(n).toArray();
-            multiplier = multiplier *2;
+            int[] randomIntsArray = IntStream.generate(() -> new Random().nextInt(100)).limit(n).toArray();
+            multiplier = multiplier * 2;
 
             long before = System.currentTimeMillis() / 1000;
+            System.out.println("\nBEFORE SORT:");
+            for(int i = 0; i<randomIntsArray.length; i++){
+                System.out.print(randomIntsArray[i] + " ");
+            }
+            System.out.println("\nAFTER SORT:");
             sorter.sort(randomIntsArray);
             long after = System.currentTimeMillis() / 1000;
             long time = after - before;
-            System.out.format("%s%s%4d", "T(", n, time);
+            //System.out.format("%s%s%4d", "T(", n, time);
         }
 
 

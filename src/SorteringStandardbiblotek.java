@@ -1,3 +1,4 @@
+import java.util.Map;
 import java.util.TreeMap;
 
 public class SorteringStandardbiblotek implements IntSorter {
@@ -18,7 +19,6 @@ public class SorteringStandardbiblotek implements IntSorter {
             if(map.containsKey(array[i])) {
                 int value = map.get(array[i]);
                 map.put(array[i], (value +1 ));
-
                 //System.out.println("Inserted: key: " + array[i] + "with value: " + map.get(array[i]));
             }
             else {
@@ -26,30 +26,32 @@ public class SorteringStandardbiblotek implements IntSorter {
                 //System.out.println("Inserted: key: " + array[i] + "with value: " + 1);
             }
         }
-
-
-
-
         // Plocka sedan ut nyckel/värde-paren igen med for / foreach
         // och lägg tillbaka rätt antal i arrayen.
         int j = 0;
-        System.out.println("Arr length" + array.length);
-        System.out.println("Map size: " + map.size());
-        for (var p : map.entrySet()) {
-             if(p.getValue() > 1){
-                 for(int i = 0; i < p.getValue(); i++){
-                     array[j] = p.getKey();
-                     j++;
-                 }
+        System.out.println("Array size: " + array.length);
+        System.out.println("Map size: " + map.size() + "\n");
+        for (Map.Entry<Integer, Integer> p : map.entrySet()) {
+            int numElements = p.getValue();
+            if(numElements > 1){
+                 for(int i = 0; i < numElements; i++) {
+                         if (j >= array.length) {
+                           break;
+                         }
+                         array[j] = p.getKey();
+                         j++;
+                     }
              }else{
+                 if(j >= array.length){
+                   break;
+                 }
                  array[j] = p.getKey();
                  j++;
              }
-
-
         }
 
-
-
+        for (int i = 0; i<array.length; i++){
+            System.out.print(array[i] + " ");
+        }
     }
 }

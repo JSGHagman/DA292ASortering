@@ -35,9 +35,7 @@ public class TestSort {
     }
 
     public static void main(String[] args) {
-        //OptimizedMergesort sorter = new OptimizedMergesort();
-        //Mergesort sorter = new Mergesort();
-        SorteringStandardbiblotek sorter = new SorteringStandardbiblotek();
+        IntSorter sorter = new SorteringStandardbiblotek();
 
         int firstN = 100000;
 

@@ -17,6 +17,7 @@ public class ArrayUtil {
             x += randomGenerator.nextInt(5);
             a[i] = x;
         }
+        shuffle(a);
         return a;
     }
 
