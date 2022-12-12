@@ -35,7 +35,7 @@ public class TestSort {
     }
 
     public static void main(String[] args) {
-        IntSorter sorter = new SorteringStandardbiblotek();
+        IntSorter sorter = new Quicksort();
 
         int firstN = 100000;
 
@@ -45,6 +45,14 @@ public class TestSort {
         testSort(sorter, firstN, true);
 
         System.out.println("\n"+sorter.getClass().getName()+".sort tested ok!");
+
+        IntSorter sorter2 = new QuickSortOptimized();
+        System.out.println("*****OPTIMIZED*****");
+        System.out.println("Unordered:");
+        testSort(sorter2, firstN, false);
+        System.out.println("\nOrdered:");
+        testSort(sorter2, firstN, true);
+
         System.exit(0);
     }
 }
