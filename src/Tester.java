@@ -7,10 +7,12 @@ public class Tester {
 
 
 
-        OptimizedMergesort sorter = new OptimizedMergesort();
+        SorteringStandardbiblotek sorter = new SorteringStandardbiblotek();
         //Mergesort sorter = new Mergesort();
         int firstN = 100;
-        test(sorter, firstN);
+
+        int array[] = new int[]{1, 3, 5, 8, 2, 4, 6, 10, 12, 11, 11, 11, 17, 22, 22, 21, 9, 13, 14, 14 };
+        sorter.sort(array);
 
     }
 
