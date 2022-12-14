@@ -29,7 +29,7 @@ public class QuickSortOptimized implements IntSorter {
 
     static void quicksort(int[] a, int start, int end) {
         if (start < end) {
-            if (end - start < 48) {
+            if (end - start < 15) {
                 insertionsort(a, start, end);
             } else {
                 int partitionIndex = partition(a, start, end);
